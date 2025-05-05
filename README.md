@@ -19,3 +19,16 @@ In this project, I used the [SPICE Toolkit](https://naif.jpl.nasa.gov/naif/toolk
 - Measuring the inclination of each planet’s orbital plane with respect to the invariable Laplace plane.
 
 View notebook: [`laplace_plane_and_conservation_laws.ipynb`](laplace_plane_and_conservation_laws.ipynb)
+
+### 3. Virial Theorem in the Sun–Jupiter–Saturn System
+
+This project explores the validity of the virial theorem in a simplified Solar System model consisting of the Sun, Jupiter, and Saturn. I computed the kinetic, potential, and total energy over 100 years, evaluated the virial expression, and checked whether the relation
+
+$$
+\langle U \rangle = -2 \langle K \rangle
+$$
+
+holds true within numerical accuracy. The results confirm that the system behaves as expected for a bound system.
+
+View notebook: [`virial_theorem_solar_system.ipynb`](virial_theorem_solar_system.ipynb)
+
