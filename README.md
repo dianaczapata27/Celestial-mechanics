@@ -80,6 +80,6 @@ We performed the following tasks:
 - Transformed JWST's coordinates to the rotating frame and plotted its trajectory.
 - Computed the Jacobi constant $$C_J$$ throughout the two years and verified that it remains approximately constant ($$C_J \approx 3$$).
 
-> View notebook: [`jwst_crtbp_analysis.ipynb`](jwst_crtbp_analysis.ipynb)
+View notebook: [`jwst_crtbp_analysis.ipynb`](jwst_crtbp_analysis.ipynb)
 
 
