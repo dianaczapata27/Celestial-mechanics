@@ -39,7 +39,7 @@ In this project, I recreated a planetary animation showing the Solar System bodi
 The goal was to generate an animation as close as possible to a reference GIF, using accurate planetary data from `Astroquery` and time steps that avoid exact multiples of 24 hours or 60 minutes (32538 minutes ≈ 22.59 days), in order to vary hours and minutes across frames. The dates were displayed using the full month name for visual clarity.
 
 View notebook: [`halley_orbit_animation.ipynb`](halley_orbit_animation.ipynb)  
-![Halley's Comet Animation](anim.gif)
+View aniamtion: ![Halley's Comet Animation](anim.gif)
 
 ### 5. Two-Body Problem Verification
 
