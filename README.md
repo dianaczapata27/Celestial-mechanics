@@ -67,3 +67,19 @@ I found that the theoretical predictions closely match the observed orbital para
 
 View notebook: [`two_body_problem_earth_moon.ipynb`](two_body_problem_earth_moon.ipynb)
 
+### 6. JWST Dynamics in the CRTBP Framework
+
+In this project, we analyze the motion of the James Webb Space Telescope (JWST) under the framework of the Circular Restricted Three-Body Problem (CRTBP), considering the Sun-Earth system.
+
+We retrieved JWST and Earth heliocentric position and velocity data using `Astroquery` from the date it reached its final orbit (January 24, 2022) to two years later.
+
+We performed the following tasks:
+- Visualized JWST's orbit in 3D in the inertial frame.
+- Computed Earth's instantaneous angular velocity $$\omega(t)$$ over time.
+- Built the rotation matrix to transform data from the inertial frame to the rotating Sun-Earth frame.
+- Transformed JWST's coordinates to the rotating frame and plotted its trajectory.
+- Computed the Jacobi constant $$C_J$$ throughout the two years and verified that it remains approximately constant ($$C_J \approx 3$$).
+
+> View notebook: [`jwst_crtbp_analysis.ipynb`](jwst_crtbp_analysis.ipynb)
+
+
