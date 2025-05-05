@@ -32,3 +32,30 @@ holds true within numerical accuracy. The results confirm that the system behave
 
 View notebook: [`virial_theorem_solar_system.ipynb`](virial_theorem_solar_system.ipynb)
 
+### 4. Planetary Animation: Halley's Comet Return (1986–2061)
+
+In this project, I recreated a planetary animation showing the Solar System bodies and Halley's Comet from February 2, 1986 to July 28, 2061.
+
+The goal was to generate an animation as close as possible to a reference GIF, using accurate planetary data from `Astroquery` and time steps that avoid exact multiples of 24 hours or 60 minutes (32538 minutes ≈ 22.59 days), in order to vary hours and minutes across frames. The dates were displayed using the full month name for visual clarity.
+
+To make the animation resemble the reference GIF, we rotated the coordinate system by 90° using:
+
+$$
+x' = x \cos\theta - y \sin\theta \\
+y' = x \sin\theta + y \cos\theta
+$$
+
+which simplifies to:
+
+$$
+x' = -y \\
+y' = x
+$$
+
+Therefore, we plotted $-y$ on the x-axis and $x$ on the y-axis.
+
+View notebook: [`halley_orbit_animation.ipynb`](halley_orbit_animation.ipynb)  
+View animation:  
+![Halley's Comet Animation](./anim.gif)
+
+
