@@ -55,6 +55,6 @@ $$
 Therefore, we plotted $-y$ on the x-axis and $x$ on the y-axis.
 
 View notebook: [`halley_orbit_animation.ipynb`](halley_orbit_animation.ipynb)  
-View animation: ![Halley's Comet Animation](anim.gif)
+![Halley's Comet Animation](anim.gif)
 
 
