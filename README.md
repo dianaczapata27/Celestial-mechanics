@@ -41,7 +41,7 @@ The goal was to generate an animation as close as possible to a reference GIF, u
 View notebook: [`halley_orbit_animation.ipynb`](halley_orbit_animation.ipynb)  
 ![Halley's Comet Animation](anim.gif)
 
-### 6. Two-Body Problem Verification
+### 5. Two-Body Problem Verification
 
 In this project, we verify that many of the theoretical results from the two-body problem hold for real celestial systems in the Solar System. We focused on the Earth–Moon system.
 
