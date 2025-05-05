@@ -41,4 +41,29 @@ The goal was to generate an animation as close as possible to a reference GIF, u
 View notebook: [`halley_orbit_animation.ipynb`](halley_orbit_animation.ipynb)  
 ![Halley's Comet Animation](anim.gif)
 
+### 6. Two-Body Problem Verification
+
+In this project, we verify that many of the theoretical results from the two-body problem hold for real celestial systems in the Solar System. We focused on the Earth–Moon system.
+
+We retrieved the positions and velocities of the Earth and Moon from the [JPL Horizons system](https://ssd.jpl.nasa.gov/horizons/) over a span of 3 months, corresponding to approximately three orbital periods of the Moon. Using this data, we:
+
+- Computed the specific relative angular momentum vector $$\vec{h} = \vec{r} \times \dot{\vec{r}}$$.
+- Computed the specific relative energy $$\epsilon = \frac{1}{2} \dot{\vec{r}}^2 - \frac{\mu}{r}$$.
+- Computed the Laplace–Runge–Lenz vector $$\vec{e} = \frac{\dot{\vec{r}} \times \vec{h}}{\mu} - \frac{\vec{r}}{r}$$.
+- Verified that these quantities remain approximately constant over time.
+
+We also calculated the average values of these quantities to derive the orbital parameters of the relative motion:
+
+- Eccentricity: $$e = \sqrt{1 + \frac{2 \epsilon h^2}{\mu^2}}$$
+- Semilatus rectum: $$p = \frac{h^2}{\mu}$$
+- Semi-major axis: $$a = -\frac{\mu}{2\epsilon}$$
+
+Then, using Astroquery, we compared our results with the orbital elements provided by JPL Horizons for:
+
+- The Moon around the Earth–Moon barycenter.
+- The Earth around the same barycenter.
+
+I found that the theoretical predictions closely match the observed orbital parameters.
+
+View notebook: [`two_body_problem_earth_moon.ipynb`](two_body_problem_earth_moon.ipynb)
 
